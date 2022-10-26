@@ -1,0 +1,176 @@
+/* 
+================================================================
+================================================================
+
+Project: Color Picker Chrome Extension
+Version: 1.0
+Author: developermithu
+Linkedin: https://linkedin.com/in/developermithu
+
+================================================================
+================================================================
+*/
+
+body {
+  background-color: white;
+  width: 280px;
+  text-align: center;
+  padding: 5px;
+}
+
+.title{
+  font-size: 15px;
+  color: #a33053;
+  text-transform: capitalize;
+}
+
+.pickerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  gap: 16px;
+  font-size: 17px;
+  padding: 8px 15px;
+  text-align: center;
+  background-color: rgba(255, 252, 252, 0.2);
+  color: #a33053;
+  border: 2px solid #a33053;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.pickerBtn:hover {
+  background-color: #a33053;
+  color: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.selectedBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.colorBox {
+  display: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.inputBox {
+  display: none;
+  width: 75px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.alertBtn {
+  color: green;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: none;
+  font-size: 14px;
+}
+
+.clipboardCheckBtn,
+.clipboardBtn {
+  display: none;
+  width: 25px;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.clipboardBtn:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.clipboardCheckBtn {
+  color: green;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* =========== options-page =========== */
+#options-page {
+  max-width: 800px;
+  min-width: 60%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#options-page .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#options-page .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #eee;
+  border: 1.5px solid #aaa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#options-page .title img {
+  width: 60px;
+}
+
+#options-page .title h1 {
+ font-size: 28px;
+ font-weight: 900;
+}
+
+#options-page .box{
+  width: 100%;
+  background-color: #eee;
+  border: 1.5px solid #aaa;
+  padding: 12px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
